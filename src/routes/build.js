@@ -80,7 +80,7 @@ router.post('/build', async (req, res, next) => {
     });
 
     // Executar build
-    const buildResult = await runBuild(projectDir);
+    const buildResult = await runBuild(projectDir, id);
 
     // Gerar URL de preview
     const previewUrl = `${req.protocol}://${req.get('host')}/preview/${projectId}/${buildResult.distDir}/`;
