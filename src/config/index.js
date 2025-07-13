@@ -19,9 +19,9 @@ export const config = {
   maxFiles: parseInt(process.env.MAX_FILES) || 100,
   maxProjectSize: parseInt(process.env.MAX_PROJECT_SIZE) || 100 * 1024 * 1024, // 100MB
   
-  // Rate limiting
-  rateLimitWindowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS) || 15 * 60 * 1000, // 15 minutos
-  rateLimitMaxRequests: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS) || 10,
+ // Rate limiting
+rateLimitWindowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS) || 60 * 1000, // 1 minuto
+rateLimitMaxRequests: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS) || 60, // 60 requisições por minuto
   
   // Limpeza automática
   cleanupIntervalMs: parseInt(process.env.CLEANUP_INTERVAL_MS) || 60 * 60 * 1000, // 1 hora
