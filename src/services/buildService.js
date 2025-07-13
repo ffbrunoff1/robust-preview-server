@@ -1,7 +1,7 @@
 import { spawn } from 'child_process';
 import path from 'path';
 import fs from 'fs/promises';
-import { config } from '../config';
+import { config } from '../config/index.js';
 import { logger } from '../utils/logger';
 
 const runCommand = (cmd, args, projectDir) =>
