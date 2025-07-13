@@ -1,0 +1,36 @@
+{
+  "name": "robust-preview-server",
+  "version": "1.0.0",
+  "description": "Sistema robusto para gerar URLs de preview de sites React/Vite/Tailwind/Astro",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node test/test.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "nanoid": "^5.0.4",
+    "winston": "^3.11.0",
+    "joi": "^17.11.0",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "sanitize-filename": "^1.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "express",
+    "preview",
+    "react",
+    "vite",
+    "astro",
+    "build"
+  ],
+  "author": "Manus",
+  "license": "MIT"
+}
+
